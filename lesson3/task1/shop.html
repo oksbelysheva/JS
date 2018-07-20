@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="script.js"></script>
+<head>
+	<title>Online shop</title>
+	<style>
+		.result{
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+<form name="loandata">
+	<table>
+		<tr><td><b>Введите данные о магазине:</b></td></tr>
+		<tr>
+			<td>1) Введите бюджет:</td>
+			<td><input type="text" name="money" onchange="createShop();"></td>
+		</tr>
+		<tr>
+			<td>2) Введите называние магазина:</td>
+			<td><input type="text" name="name" onchange="createShop();"></td>
+		</tr>
+		<tr>
+			<td>3) Тип товара который будет продаваться:</td>
+			<td><input type="text" name="type""></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="button" value="Добавить тип" onclick="addType();"></td>
+		</tr>
+		<tr>
+			<td>4) Имя сотрудника который будет добавлен:</td>
+			<td><input type="text" name="employerName""></td>
+		</tr>
+		<tr>
+			<td>5) Номер сотрудника который будет добавлен:</td>
+			<td><input type="text" name="employerNumb""></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="button" value="Добавить сотрудника" onclick="addEmployer();"></td>
+		</tr>
+		<tr>
+			<td>6) Бюджет на день:</td>
+			<td>$<span class="result" id="moneyOnDay"></span></td>
+		</tr>
+		<tr>
+			<td>7) Информация о созданном магазине:</td>
+			<td><span class="result" id="shop"></span></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
